@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/libc.build/master.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/libc/libc.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/libc.build/libc.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/libc.build/libc.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/libc.build/libc~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/libc.build/libc.swiftdeps"
+  }
+}

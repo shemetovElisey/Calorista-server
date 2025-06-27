@@ -1,0 +1,71 @@
+{
+  "": {
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/master.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/jwt/Sources/JWT/Application+JWT.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/Application+JWT.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/Application+JWT.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/Application+JWT~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/Application+JWT.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/jwt/Sources/JWT/AsyncJWTAuthenticator.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/AsyncJWTAuthenticator.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/AsyncJWTAuthenticator.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/AsyncJWTAuthenticator~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/AsyncJWTAuthenticator.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/jwt/Sources/JWT/Exports.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/Exports.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/Exports.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/Exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/Exports.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/jwt/Sources/JWT/JWKSCache.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWKSCache.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWKSCache.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWKSCache~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWKSCache.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/jwt/Sources/JWT/JWT+Apple.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Apple.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Apple.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Apple~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Apple.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/jwt/Sources/JWT/JWT+Concurrency.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Concurrency.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Concurrency.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Concurrency~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Concurrency.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/jwt/Sources/JWT/JWT+Google.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Google.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Google.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Google~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Google.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/jwt/Sources/JWT/JWT+Microsoft.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Microsoft.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Microsoft.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Microsoft~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWT+Microsoft.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/jwt/Sources/JWT/JWTAuthenticator.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWTAuthenticator.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWTAuthenticator.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWTAuthenticator~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWTAuthenticator.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/jwt/Sources/JWT/JWTError+Vapor.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWTError+Vapor.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWTError+Vapor.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWTError+Vapor~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/JWTError+Vapor.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/jwt/Sources/JWT/Request+JWT.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/Request+JWT.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/Request+JWT.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/Request+JWT~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/JWT.build/Request+JWT.swiftdeps"
+  }
+}

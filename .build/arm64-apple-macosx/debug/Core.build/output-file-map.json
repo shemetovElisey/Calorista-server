@@ -1,0 +1,143 @@
+{
+  "": {
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/master.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/Array.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Array.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Array.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Array~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Array.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/Bits.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Bits.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Bits.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Bits~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Bits.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/Cache.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Cache.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Cache.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Cache~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Cache.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/Collection+Safe.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Collection+Safe.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Collection+Safe.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Collection+Safe~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Collection+Safe.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/DataFile.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/DataFile.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/DataFile.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/DataFile~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/DataFile.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/Dispatch.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Dispatch.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Dispatch.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Dispatch~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Dispatch.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/DispatchTime+Utilities.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/DispatchTime+Utilities.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/DispatchTime+Utilities.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/DispatchTime+Utilities~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/DispatchTime+Utilities.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/EmptyInitializable.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/EmptyInitializable.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/EmptyInitializable.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/EmptyInitializable~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/EmptyInitializable.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/Exports.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Exports.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Exports.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Exports.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/Extendable.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Extendable.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Extendable.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Extendable~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Extendable.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/FileProtocol.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/FileProtocol.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/FileProtocol.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/FileProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/FileProtocol.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/Int+Hex.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Int+Hex.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Int+Hex.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Int+Hex~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Int+Hex.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/Lock.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Lock.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Lock.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Lock~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Lock.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/Portal.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Portal.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Portal.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Portal~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Portal.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/RFC1123.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/RFC1123.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/RFC1123.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/RFC1123~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/RFC1123.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/Result.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Result.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Result.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Result~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Result.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/Semaphore.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Semaphore.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Semaphore.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Semaphore~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Semaphore.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/Sequence.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Sequence.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Sequence.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Sequence~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Sequence.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/StaticDataBuffer.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/StaticDataBuffer.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/StaticDataBuffer.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/StaticDataBuffer~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/StaticDataBuffer.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/String+CaseInsensitiveCompare.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/String+CaseInsensitiveCompare.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/String+CaseInsensitiveCompare.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/String+CaseInsensitiveCompare~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/String+CaseInsensitiveCompare.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/String+Polymorphic.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/String+Polymorphic.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/String+Polymorphic.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/String+Polymorphic~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/String+Polymorphic.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/String.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/String.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/String.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/String~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/String.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/core/Sources/Core/WorkingDirectory.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/WorkingDirectory.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/WorkingDirectory.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/WorkingDirectory~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/WorkingDirectory.swiftdeps"
+  }
+}

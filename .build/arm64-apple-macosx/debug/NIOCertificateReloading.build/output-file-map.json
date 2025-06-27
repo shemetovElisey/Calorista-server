@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/NIOCertificateReloading.build/master.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/swift-nio-extras/Sources/NIOCertificateReloading/CertificateReloader.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/NIOCertificateReloading.build/CertificateReloader.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/NIOCertificateReloading.build/CertificateReloader.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/NIOCertificateReloading.build/CertificateReloader~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/NIOCertificateReloading.build/CertificateReloader.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/swift-nio-extras/Sources/NIOCertificateReloading/TimedCertificateReloader.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/NIOCertificateReloading.build/TimedCertificateReloader.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/NIOCertificateReloading.build/TimedCertificateReloader.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/NIOCertificateReloading.build/TimedCertificateReloader~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/NIOCertificateReloading.build/TimedCertificateReloader.swiftdeps"
+  }
+}

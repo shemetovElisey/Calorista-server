@@ -1,0 +1,4 @@
+module Numerics {
+    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Numerics.build/Numerics-Swift.h"
+    requires objc
+}

@@ -1,0 +1,4 @@
+module NIOHTTPTypes {
+    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/NIOHTTPTypes.build/NIOHTTPTypes-Swift.h"
+    requires objc
+}

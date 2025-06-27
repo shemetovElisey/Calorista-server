@@ -1,0 +1,4 @@
+module CSQLite {
+    umbrella "/Users/elisey/Documents/Calorista/.build/checkouts/sqlite-nio/Sources/CSQLite/include"
+    export *
+}

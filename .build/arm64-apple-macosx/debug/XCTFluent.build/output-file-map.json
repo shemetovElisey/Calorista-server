@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/XCTFluent.build/master.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/fluent-kit/Sources/XCTFluent/DummyDatabase.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/XCTFluent.build/DummyDatabase.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/XCTFluent.build/DummyDatabase.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/XCTFluent.build/DummyDatabase~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/XCTFluent.build/DummyDatabase.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/fluent-kit/Sources/XCTFluent/TestDatabase.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/XCTFluent.build/TestDatabase.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/XCTFluent.build/TestDatabase.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/XCTFluent.build/TestDatabase~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/XCTFluent.build/TestDatabase.swiftdeps"
+  }
+}

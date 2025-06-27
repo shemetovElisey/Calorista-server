@@ -1,0 +1,4 @@
+module RoutingKit {
+    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/RoutingKit.build/RoutingKit-Swift.h"
+    requires objc
+}

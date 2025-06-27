@@ -1,0 +1,4 @@
+module BCrypt {
+    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/BCrypt-Swift.h"
+    requires objc
+}

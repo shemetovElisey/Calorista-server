@@ -1,0 +1,59 @@
+{
+  "": {
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/master.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/bcrypt/Sources/BCrypt/BCryptError.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/BCryptError.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/BCryptError.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/BCryptError~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/BCryptError.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/bcrypt/Sources/BCrypt/Base64.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Base64.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Base64.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Base64~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Base64.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/bcrypt/Sources/BCrypt/Convenience.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Convenience.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Convenience.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Convenience~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Convenience.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/bcrypt/Sources/BCrypt/Export.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Export.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Export.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Export~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Export.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/bcrypt/Sources/BCrypt/Hash.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Hash.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Hash.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Hash~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Hash.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/bcrypt/Sources/BCrypt/Keys.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Keys.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Keys.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Keys~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Keys.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/bcrypt/Sources/BCrypt/Parser.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Parser.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Parser.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Parser~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Parser.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/bcrypt/Sources/BCrypt/Salt.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Salt.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Salt.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Salt~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Salt.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/bcrypt/Sources/BCrypt/Serializer.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Serializer.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Serializer.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Serializer~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/BCrypt.build/Serializer.swiftdeps"
+  }
+}

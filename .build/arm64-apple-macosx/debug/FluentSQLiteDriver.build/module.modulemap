@@ -1,0 +1,4 @@
+module FluentSQLiteDriver {
+    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/FluentSQLiteDriver.build/FluentSQLiteDriver-Swift.h"
+    requires objc
+}

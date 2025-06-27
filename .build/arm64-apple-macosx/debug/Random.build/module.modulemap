@@ -1,0 +1,4 @@
+module Random {
+    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Random.build/Random-Swift.h"
+    requires objc
+}

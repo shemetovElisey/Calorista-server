@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Debugging.build/master.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/debugging/Sources/Debugging/Debuggable.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Debugging.build/Debuggable.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Debugging.build/Debuggable.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Debugging.build/Debuggable~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Debugging.build/Debuggable.swiftdeps"
+  }
+}

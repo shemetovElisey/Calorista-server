@@ -1,0 +1,4 @@
+module ConsoleKitTerminal {
+    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/ConsoleKitTerminal.build/ConsoleKitTerminal-Swift.h"
+    requires objc
+}

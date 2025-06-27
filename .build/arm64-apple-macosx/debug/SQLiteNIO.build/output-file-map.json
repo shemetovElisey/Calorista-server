@@ -1,0 +1,65 @@
+{
+  "": {
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/master.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/sqlite-nio/Sources/SQLiteNIO/Exports.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/Exports.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/Exports.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/Exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/Exports.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/sqlite-nio/Sources/SQLiteNIO/SQLiteConnection.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteConnection.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteConnection.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteConnection~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteConnection.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/sqlite-nio/Sources/SQLiteNIO/SQLiteCustomFunction.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteCustomFunction.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteCustomFunction.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteCustomFunction~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteCustomFunction.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/sqlite-nio/Sources/SQLiteNIO/SQLiteData.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteData.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteData.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteData~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteData.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/sqlite-nio/Sources/SQLiteNIO/SQLiteDataConvertible.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteDataConvertible.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteDataConvertible.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteDataConvertible~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteDataConvertible.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/sqlite-nio/Sources/SQLiteNIO/SQLiteDataType.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteDataType.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteDataType.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteDataType~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteDataType.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/sqlite-nio/Sources/SQLiteNIO/SQLiteDatabase.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteDatabase.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteDatabase.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteDatabase~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteDatabase.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/sqlite-nio/Sources/SQLiteNIO/SQLiteError.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteError.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteError.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteError~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteError.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/sqlite-nio/Sources/SQLiteNIO/SQLiteRow.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteRow.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteRow.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteRow~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteRow.swiftdeps"
+  },
+  "/Users/elisey/Documents/Calorista/.build/checkouts/sqlite-nio/Sources/SQLiteNIO/SQLiteStatement.swift": {
+    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteStatement.d",
+    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteStatement.swift.o",
+    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteStatement~partial.swiftmodule",
+    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteStatement.swiftdeps"
+  }
+}

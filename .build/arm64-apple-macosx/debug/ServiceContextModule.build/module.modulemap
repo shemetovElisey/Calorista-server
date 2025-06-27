@@ -1,0 +1,4 @@
+module ServiceContextModule {
+    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/ServiceContextModule.build/ServiceContextModule-Swift.h"
+    requires objc
+}

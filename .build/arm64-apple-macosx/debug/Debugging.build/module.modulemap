@@ -1,0 +1,4 @@
+module Debugging {
+    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Debugging.build/Debugging-Swift.h"
+    requires objc
+}

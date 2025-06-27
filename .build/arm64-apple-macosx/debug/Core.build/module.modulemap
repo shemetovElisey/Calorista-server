@@ -1,0 +1,4 @@
+module Core {
+    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/Core.build/Core-Swift.h"
+    requires objc
+}

@@ -1,0 +1,4 @@
+module VaporTesting {
+    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/VaporTesting.build/VaporTesting-Swift.h"
+    requires objc
+}
