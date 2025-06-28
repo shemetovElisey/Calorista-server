@@ -1,4 +1,0 @@
-module SQLiteKit {
-    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteKit.build/SQLiteKit-Swift.h"
-    requires objc
-}

@@ -1,4 +1,0 @@
-module HashTreeCollections {
-    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/HashTreeCollections.build/HashTreeCollections-Swift.h"
-    requires objc
-}

@@ -1,4 +1,0 @@
-module CoreMetrics {
-    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/CoreMetrics.build/CoreMetrics-Swift.h"
-    requires objc
-}

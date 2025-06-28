@@ -1,4 +1,0 @@
-module FluentSQL {
-    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/FluentSQL.build/FluentSQL-Swift.h"
-    requires objc
-}

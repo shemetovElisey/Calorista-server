@@ -1,4 +1,0 @@
-module NIOWebSocket {
-    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/NIOWebSocket.build/NIOWebSocket-Swift.h"
-    requires objc
-}

@@ -1,4 +1,0 @@
-module libc {
-    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/libc.build/libc-Swift.h"
-    requires objc
-}

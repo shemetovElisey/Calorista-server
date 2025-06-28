@@ -1,4 +1,0 @@
-module FluentKit {
-    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/FluentKit.build/FluentKit-Swift.h"
-    requires objc
-}

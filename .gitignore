@@ -47,6 +47,8 @@ playground.xcworkspace
 # .swiftpm
 
 .build/
+.swiftpm/
+Package.resolved
 
 # CocoaPods
 #
@@ -91,6 +93,8 @@ iOSInjectionProject/
 
 # Environment variables
 .env
+.env.local
+.env.production
 
 # Database files
 *.sqlite
@@ -99,6 +103,7 @@ iOSInjectionProject/
 
 # Logs
 *.log
+app.log
 
 # OS generated files
 .DS_Store
@@ -107,4 +112,24 @@ iOSInjectionProject/
 .Spotlight-V100
 .Trashes
 ehthumbs.db
-Thumbs.db 
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+
+# Process ID
+app.pid
+
+# Build artifacts
+*.dSYM/
+*.o
+*.a
+*.so
+*.dylib 

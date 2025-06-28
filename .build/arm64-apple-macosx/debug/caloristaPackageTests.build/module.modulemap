@@ -1,4 +1,0 @@
-module caloristaPackageTests {
-    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/caloristaPackageTests.build/caloristaPackageTests-Swift.h"
-    requires objc
-}

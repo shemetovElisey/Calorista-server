@@ -1,4 +1,0 @@
-module RealModule {
-    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/RealModule.build/RealModule-Swift.h"
-    requires objc
-}

@@ -1,4 +1,0 @@
-module XCTFluent {
-    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/XCTFluent.build/XCTFluent-Swift.h"
-    requires objc
-}

@@ -1,4 +1,0 @@
-module SQLiteNIO {
-    header "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/SQLiteNIO.build/SQLiteNIO-Swift.h"
-    requires objc
-}
