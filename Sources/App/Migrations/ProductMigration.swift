@@ -15,6 +15,8 @@ struct ProductMigration: Migration {
             .field("category", .string)
             .field("image_url", .string)
             .field("last_updated", .datetime, .required)
+            .field("created_at", .datetime, .required)
+            .field("updated_at", .datetime, .required)
             .unique(on: "barcode")
             .create()
     }

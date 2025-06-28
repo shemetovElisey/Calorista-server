@@ -1,5 +1,6 @@
 import Vapor
 import Fluent
+import JWT
 
 // Контроллер для аутентификации
 struct AuthController: RouteCollection {
@@ -17,114 +18,107 @@ struct AuthController: RouteCollection {
     
     // POST /auth/register — регистрация пользователя
     func register(req: Request) async throws -> AuthResponse {
-        try UserRegisterDTO.validate(content: req)
-        let dto = try req.content.decode(UserRegisterDTO.self)
+        try UserRegisterRequest.validate(content: req)
+        let registerData = try req.content.decode(UserRegisterRequest.self)
         
-        // Проверяем, что email не занят
-        if try await User.query(on: req.db)
-            .filter(\.$email == dto.email)
-            .first() != nil {
-            throw Abort(.conflict, reason: "Email already exists")
-        }
-        
-        // Проверяем, что username не занят
-        if try await User.query(on: req.db)
-            .filter(\.$username == dto.username)
-            .first() != nil {
-            throw Abort(.conflict, reason: "Username already exists")
+        // Проверяем, что пользователь с таким email не существует
+        if try await User.query(on: req.db).filter(\.$email == registerData.email).first() != nil {
+            throw Abort(.conflict, reason: "User with this email already exists")
         }
         
         // Хешируем пароль
-        let hashedPassword = try User.hashPassword(dto.password)
+        let hashedPassword = try req.password.hash(registerData.password)
         
         // Создаем пользователя
         let user = User(
-            email: dto.email,
-            username: dto.username,
-            passwordHash: hashedPassword
+            email: registerData.email,
+            username: registerData.email,
+            passwordHash: hashedPassword,
+            name: registerData.name
         )
         
         try await user.save(on: req.db)
         
-        // Генерируем токен
-        let token = try user.generateToken(app: req.application)
+        // Генерируем JWT токен
+        let token = try req.jwt.sign(JWTToken(
+            subject: .init(value: try user.requireID().uuidString),
+            expiration: .init(value: Date().addingTimeInterval(86400))
+        ))
         
-        return AuthResponse(user: user, token: token)
+        return AuthResponse(
+            token: token,
+            user: UserResponse(
+                id: try user.requireID(),
+                email: user.email,
+                name: user.name,
+                createdAt: user.createdAt
+            )
+        )
     }
     
     // POST /auth/login — вход пользователя
     func login(req: Request) async throws -> AuthResponse {
-        try UserLoginDTO.validate(content: req)
-        let dto = try req.content.decode(UserLoginDTO.self)
+        try UserLoginRequest.validate(content: req)
+        let loginData = try req.content.decode(UserLoginRequest.self)
         
         // Ищем пользователя по email
-        guard let user = try await User.query(on: req.db)
-            .filter(\.$email == dto.email)
-            .first() else {
+        guard let user = try await User.query(on: req.db).filter(\.$email == loginData.email).first() else {
             throw Abort(.notFound, reason: "User not found")
         }
         
         // Проверяем пароль
-        guard try user.verifyPassword(dto.password) else {
+        guard try req.password.verify(loginData.password, created: user.passwordHash) else {
             throw Abort(.unauthorized, reason: "Invalid password")
         }
         
-        // Генерируем токен
-        let token = try user.generateToken(app: req.application)
+        // Генерируем JWT токен
+        let token = try req.jwt.sign(JWTToken(
+            subject: .init(value: try user.requireID().uuidString),
+            expiration: .init(value: Date().addingTimeInterval(86400))
+        ))
         
-        return AuthResponse(user: user, token: token)
+        return AuthResponse(
+            token: token,
+            user: UserResponse(
+                id: try user.requireID(),
+                email: user.email,
+                name: user.name,
+                createdAt: user.createdAt
+            )
+        )
     }
     
     // GET /auth/me — получить информацию о текущем пользователе
-    func me(req: Request) async throws -> User {
-        guard let user = req.auth.get(User.self) else {
-            throw Abort(.unauthorized, reason: "User not authenticated")
-        }
-        return user
+    func me(req: Request) async throws -> UserResponse {
+        let user = try req.auth.require(User.self)
+        
+        return UserResponse(
+            id: try user.requireID(),
+            email: user.email,
+            name: user.name,
+            createdAt: user.createdAt
+        )
     }
     
     // PUT /auth/me — обновить профиль пользователя
-    func updateProfile(req: Request) async throws -> User {
-        guard let user = req.auth.get(User.self) else {
-            throw Abort(.unauthorized, reason: "User not authenticated")
-        }
+    func updateProfile(req: Request) async throws -> UserResponse {
+        let user = try req.auth.require(User.self)
         
-        let dto = try req.content.decode(UserUpdateDTO.self)
-        
-        // Обновляем поля, если они предоставлены
-        if let username = dto.username {
-            // Проверяем, что username не занят другим пользователем
-            if try await User.query(on: req.db)
-                .filter(\.$username == username)
-                .filter(\.$id != user.id!)
-                .first() != nil {
-                throw Abort(.conflict, reason: "Username already exists")
-            }
-            user.username = username
-        }
-        
-        if let email = dto.email {
-            // Проверяем, что email не занят другим пользователем
-            if try await User.query(on: req.db)
-                .filter(\.$email == email)
-                .filter(\.$id != user.id!)
-                .first() != nil {
-                throw Abort(.conflict, reason: "Email already exists")
-            }
-            user.email = email
-        }
-        
-        user.updatedAt = Date()
-        try await user.save(on: req.db)
-        
-        return user
+        // Здесь можно добавить логику обновления профиля
+        // Пока просто возвращаем текущие данные
+        return UserResponse(
+            id: try user.requireID(),
+            email: user.email,
+            name: user.name,
+            createdAt: user.createdAt
+        )
     }
     
-    // DELETE /auth/logout — выход пользователя (опционально)
+    // DELETE /auth/logout — выход из системы
     func logout(req: Request) async throws -> HTTPStatus {
         // В JWT аутентификации logout обычно реализуется на клиенте
-        // путем удаления токена, но здесь можно добавить логику
-        // для blacklist токенов, если нужно
+        // путем удаления токена. Здесь можно добавить логику для
+        // добавления токена в черный список, если необходимо.
         return .ok
     }
 } 

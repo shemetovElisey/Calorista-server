@@ -18,61 +18,65 @@ final class User: Model, Content, Authenticatable {
     @Field(key: "password_hash")
     var passwordHash: String
     
-    @Field(key: "created_at")
-    var createdAt: Date
+    @Field(key: "name")
+    var name: String
     
-    @Field(key: "updated_at")
-    var updatedAt: Date
+    @Timestamp(key: "created_at", on: .create)
+    var createdAt: Date?
+    
+    @Timestamp(key: "updated_at", on: .update)
+    var updatedAt: Date?
     
     init() {}
     
-    init(id: UUID? = nil, email: String, username: String, passwordHash: String) {
+    init(id: UUID? = nil, email: String, username: String, passwordHash: String, name: String) {
         self.id = id
         self.email = email
         self.username = username
         self.passwordHash = passwordHash
-        self.createdAt = Date()
-        self.updatedAt = Date()
+        self.name = name
     }
 }
 
 // DTO для регистрации пользователя
-struct UserRegisterDTO: Content {
+struct UserRegisterRequest: Content {
     let email: String
-    let username: String
     let password: String
+    let name: String
 }
 
 // DTO для входа пользователя
-struct UserLoginDTO: Content {
+struct UserLoginRequest: Content {
     let email: String
     let password: String
 }
 
 // DTO для ответа с токеном
 struct AuthResponse: Content {
-    let user: User
     let token: String
+    let user: UserResponse
 }
 
-// DTO для обновления пользователя
-struct UserUpdateDTO: Content {
-    let username: String?
-    let email: String?
+// DTO для ответа с данными пользователя
+struct UserResponse: Content {
+    let id: UUID
+    let email: String
+    let name: String
+    let createdAt: Date?
 }
 
-extension UserRegisterDTO: Validatable {
+extension UserRegisterRequest: Validatable {
     static func validations(_ validations: inout Validations) {
         validations.add("email", as: String.self, is: .email, required: true)
-        validations.add("username", as: String.self, is: .count(3...50), required: true)
         validations.add("password", as: String.self, is: .count(6...), required: true)
+        validations.add("name", as: String.self, is: .count(3...50), required: true)
     }
 }
 
-extension UserLoginDTO: Validatable {
+extension UserLoginRequest: Validatable {
     static func validations(_ validations: inout Validations) {
         validations.add("email", as: String.self, is: .email, required: true)
-        validations.add("password", as: String.self, is: !.empty, required: true)
+        validations.add("password", as: String.self, is: .count(6...), required: true)
     }
 }
 

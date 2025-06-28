@@ -15,13 +15,13 @@ final class Meal: Model, Content {
     var name: String
     
     @Field(key: "calories")
-    var calories: Double
-    
-    @Field(key: "carbohydrates")
-    var carbohydrates: Double
+    var calories: Int
     
     @Field(key: "protein")
     var protein: Double
+    
+    @Field(key: "carbs")
+    var carbs: Double
     
     @Field(key: "fat")
     var fat: Double
@@ -29,36 +29,72 @@ final class Meal: Model, Content {
     @Field(key: "date")
     var date: Date
     
+    @Timestamp(key: "created_at", on: .create)
+    var createdAt: Date?
+    
+    @Timestamp(key: "updated_at", on: .update)
+    var updatedAt: Date?
+    
     init() {}
     
-    init(id: UUID? = nil, userId: User.IDValue, name: String, calories: Double, carbohydrates: Double, protein: Double, fat: Double, date: Date) {
+    init(id: UUID? = nil, userId: User.IDValue, name: String, calories: Int, protein: Double, carbs: Double, fat: Double, date: Date) {
         self.id = id
         self.$user.id = userId
         self.name = name
         self.calories = calories
-        self.carbohydrates = carbohydrates
         self.protein = protein
+        self.carbs = carbs
         self.fat = fat
         self.date = date
     }
 }
 
 // DTO для создания нового приёма пищи с валидацией
-struct MealCreateDTO: Content {
+struct MealCreateRequest: Content {
     let name: String
-    let calories: Double
-    let carbohydrates: Double
+    let calories: Int
     let protein: Double
+    let carbs: Double
     let fat: Double
-    let date: Date?
+    let date: Date
 }
 
-extension MealCreateDTO: Validatable {
+struct MealResponse: Content {
+    let id: UUID
+    let name: String
+    let calories: Int
+    let protein: Double
+    let carbs: Double
+    let fat: Double
+    let date: Date
+    let createdAt: Date?
+    let updatedAt: Date?
+}
+
+extension MealCreateRequest: Validatable {
     static func validations(_ validations: inout Validations) {
-        validations.add("name", as: String.self, is: !.empty, required: true)
-        validations.add("calories", as: Double.self, is: .range(0.01...), required: true)
-        validations.add("carbohydrates", as: Double.self, is: .range(0...), required: true)
-        validations.add("protein", as: Double.self, is: .range(0...), required: true)
-        validations.add("fat", as: Double.self, is: .range(0...), required: true)
+        validations.add("name", as: String.self, is: .count(1...100), required: true)
+        validations.add("calories", as: Int.self, is: .range(0...10000), required: true)
+        validations.add("protein", as: Double.self, is: .range(0...1000), required: true)
+        validations.add("carbs", as: Double.self, is: .range(0...1000), required: true)
+        validations.add("fat", as: Double.self, is: .range(0...1000), required: true)
+        validations.add("date", as: Date.self, required: true)
+    }
+}
+
+// Расширение для конвертации Meal в MealResponse
+extension Meal {
+    func toResponse() -> MealResponse {
+        MealResponse(
+            id: self.id ?? UUID(),
+            name: self.name,
+            calories: self.calories,
+            protein: self.protein,
+            carbs: self.carbs,
+            fat: self.fat,
+            date: self.date,
+            createdAt: self.createdAt,
+            updatedAt: self.updatedAt
+        )
     }
 } 

@@ -76,8 +76,8 @@ f4aa9a5f684ea775c17e5161713ec86bc32f515d	not-for-merge	'refs/pull/85/head' of ht
 39d6fec54a864f5564321b75efd587b308ddfeed	not-for-merge	'refs/pull/87/merge' of https://github.com/vapor/sqlite-nio
 7e145b3f9a072f7ab80a4090d4efd317f0d3bab0	not-for-merge	'refs/pull/89/head' of https://github.com/vapor/sqlite-nio
 fa7813a34f8be1d9100079f9a1ab8399196c0737	not-for-merge	'refs/pull/9/head' of https://github.com/vapor/sqlite-nio
-a7d4c6a46b1d039ae430a9529fb34d5563705732	not-for-merge	'refs/pull/90/head' of https://github.com/vapor/sqlite-nio
-41cca6e035f2d811733898cae26108950bb61b29	not-for-merge	'refs/pull/90/merge' of https://github.com/vapor/sqlite-nio
+bcc6d3234984f758499e6f695e6065be96ce5324	not-for-merge	'refs/pull/90/head' of https://github.com/vapor/sqlite-nio
+89d14f392c8156585b2af42e978b1eb4186e7bd8	not-for-merge	'refs/pull/90/merge' of https://github.com/vapor/sqlite-nio
 2e9ae8aab4f20a372901047e0aaf051783eb8bd7	not-for-merge	tag '1.0.0' of https://github.com/vapor/sqlite-nio
 c203fd495d2007120ff8c5b38d393acc7fac3490	not-for-merge	tag '1.0.0-alpha.1' of https://github.com/vapor/sqlite-nio
 af713ceab2d186739b7ffd95f7edcfad8d8d57bf	not-for-merge	tag '1.0.0-alpha.1.1' of https://github.com/vapor/sqlite-nio

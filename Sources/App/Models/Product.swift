@@ -38,12 +38,15 @@ final class Product: Model, Content {
     @Field(key: "last_updated")
     var lastUpdated: Date
     
+    @Timestamp(key: "created_at", on: .create)
+    var createdAt: Date?
+    
+    @Timestamp(key: "updated_at", on: .update)
+    var updatedAt: Date?
+    
     init() {}
     
-    init(id: UUID? = nil, barcode: String, name: String, brand: String? = nil, 
-         caloriesPer100g: Double? = nil, proteinPer100g: Double? = nil, 
-         fatPer100g: Double? = nil, carbohydratesPer100g: Double? = nil,
-         category: String? = nil, imageUrl: String? = nil) {
+    init(id: UUID? = nil, barcode: String, name: String, brand: String? = nil, caloriesPer100g: Double? = nil, proteinPer100g: Double? = nil, fatPer100g: Double? = nil, carbohydratesPer100g: Double? = nil, category: String? = nil, imageUrl: String? = nil) {
         self.id = id
         self.barcode = barcode
         self.name = name
@@ -59,8 +62,14 @@ final class Product: Model, Content {
 }
 
 // DTO для поиска продуктов
-struct ProductSearchDTO: Content {
+struct ProductSearchRequest: Content {
     let query: String
+}
+
+struct ProductSearchResponse: Content {
+    let products: [Product]
+    let total: Int
+    let fromCache: Bool
 }
 
 // DTO для создания приёма пищи с продуктом

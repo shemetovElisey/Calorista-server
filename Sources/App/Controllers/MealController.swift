@@ -7,78 +7,168 @@ struct MealController: RouteCollection {
         let meals = routes.grouped("meals")
             .grouped(AuthMiddleware()) // Защищаем все маршруты
         
-        meals.get(use: getAll)
-        meals.get(":mealID", use: getByID)
+        meals.get(use: index)
         meals.post(use: create)
-        meals.delete(":mealID", use: delete)
+        meals.get("test", use: test) // Добавляем тестовый эндпоинт
+        
+        meals.group(":mealID") { meal in
+            meal.get(use: show)
+            meal.put(use: update)
+            meal.delete(use: delete)
+        }
     }
     
     // GET /meals — получить список всех приёмов пищи пользователя
-    func getAll(req: Request) async throws -> [Meal] {
-        guard let user = req.auth.get(User.self) else {
-            throw Abort(.unauthorized, reason: "User not authenticated")
-        }
+    func index(req: Request) async throws -> [MealResponse] {
+        let user = try req.auth.require(User.self)
+        let userId = try user.requireID()
         
-        return try await Meal.query(on: req.db)
-            .filter(\.$user.$id == user.id!)
+        let meals = try await Meal.query(on: req.db)
+            .filter(\.$user.$id == userId)
+            .sort(\.$date, .descending)
             .all()
+        
+        return try meals.map { meal in
+            MealResponse(
+                id: try meal.requireID(),
+                name: meal.name,
+                calories: meal.calories,
+                protein: meal.protein,
+                carbs: meal.carbs,
+                fat: meal.fat,
+                date: meal.date,
+                createdAt: meal.createdAt,
+                updatedAt: meal.updatedAt
+            )
+        }
     }
     
     // GET /meals/:id — получить конкретный приём пищи пользователя
-    func getByID(req: Request) async throws -> Meal {
-        guard let user = req.auth.get(User.self) else {
-            throw Abort(.unauthorized, reason: "User not authenticated")
-        }
-        guard let mealIDString = req.parameters.get("mealID"), let mealID = UUID(uuidString: mealIDString) else {
+    func show(req: Request) async throws -> MealResponse {
+        let user = try req.auth.require(User.self)
+        let userId = try user.requireID()
+        guard let mealID = req.parameters.get("mealID", as: UUID.self) else {
             throw Abort(.badRequest, reason: "Invalid meal ID")
         }
+        
         guard let meal = try await Meal.query(on: req.db)
             .filter(\.$id == mealID)
-            .filter(\.$user.$id == user.id!)
+            .filter(\.$user.$id == userId)
             .first() else {
             throw Abort(.notFound, reason: "Meal not found")
         }
-        return meal
+        
+        return MealResponse(
+            id: try meal.requireID(),
+            name: meal.name,
+            calories: meal.calories,
+            protein: meal.protein,
+            carbs: meal.carbs,
+            fat: meal.fat,
+            date: meal.date,
+            createdAt: meal.createdAt,
+            updatedAt: meal.updatedAt
+        )
     }
     
     // POST /meals — создать новый приём пищи
-    func create(req: Request) async throws -> Meal {
-        guard let user = req.auth.get(User.self) else {
-            throw Abort(.unauthorized, reason: "User not authenticated")
-        }
-        
-        try MealCreateDTO.validate(content: req)
-        let dto = try req.content.decode(MealCreateDTO.self)
+    func create(req: Request) async throws -> MealResponse {
+        let user = try req.auth.require(User.self)
+        let userId = try user.requireID()
+        try MealCreateRequest.validate(content: req)
+        let mealData = try req.content.decode(MealCreateRequest.self)
         
         let meal = Meal(
-            userId: user.id!,
-            name: dto.name,
-            calories: dto.calories,
-            carbohydrates: dto.carbohydrates,
-            protein: dto.protein,
-            fat: dto.fat,
-            date: dto.date ?? Date()
+            userId: userId,
+            name: mealData.name,
+            calories: mealData.calories,
+            protein: mealData.protein,
+            carbs: mealData.carbs,
+            fat: mealData.fat,
+            date: mealData.date
         )
         
         try await meal.save(on: req.db)
-        return meal
+        
+        return MealResponse(
+            id: try meal.requireID(),
+            name: meal.name,
+            calories: meal.calories,
+            protein: meal.protein,
+            carbs: meal.carbs,
+            fat: meal.fat,
+            date: meal.date,
+            createdAt: meal.createdAt,
+            updatedAt: meal.updatedAt
+        )
+    }
+    
+    // PUT /meals/:id — обновить приём пищи
+    func update(req: Request) async throws -> MealResponse {
+        let user = try req.auth.require(User.self)
+        let userId = try user.requireID()
+        guard let mealID = req.parameters.get("mealID", as: UUID.self) else {
+            throw Abort(.badRequest, reason: "Invalid meal ID")
+        }
+        
+        try MealCreateRequest.validate(content: req)
+        let mealData = try req.content.decode(MealCreateRequest.self)
+        
+        guard let meal = try await Meal.query(on: req.db)
+            .filter(\.$id == mealID)
+            .filter(\.$user.$id == userId)
+            .first() else {
+            throw Abort(.notFound, reason: "Meal not found")
+        }
+        
+        meal.name = mealData.name
+        meal.calories = mealData.calories
+        meal.protein = mealData.protein
+        meal.carbs = mealData.carbs
+        meal.fat = mealData.fat
+        meal.date = mealData.date
+        
+        try await meal.save(on: req.db)
+        
+        return MealResponse(
+            id: try meal.requireID(),
+            name: meal.name,
+            calories: meal.calories,
+            protein: meal.protein,
+            carbs: meal.carbs,
+            fat: meal.fat,
+            date: meal.date,
+            createdAt: meal.createdAt,
+            updatedAt: meal.updatedAt
+        )
     }
     
     // DELETE /meals/:id — удалить приём пищи
     func delete(req: Request) async throws -> HTTPStatus {
-        guard let user = req.auth.get(User.self) else {
-            throw Abort(.unauthorized, reason: "User not authenticated")
-        }
-        guard let mealIDString = req.parameters.get("mealID"), let mealID = UUID(uuidString: mealIDString) else {
+        let user = try req.auth.require(User.self)
+        let userId = try user.requireID()
+        guard let mealID = req.parameters.get("mealID", as: UUID.self) else {
             throw Abort(.badRequest, reason: "Invalid meal ID")
         }
+        
         guard let meal = try await Meal.query(on: req.db)
             .filter(\.$id == mealID)
-            .filter(\.$user.$id == user.id!)
+            .filter(\.$user.$id == userId)
             .first() else {
             throw Abort(.notFound, reason: "Meal not found")
         }
+        
         try await meal.delete(on: req.db)
         return .noContent
+    }
+    
+    // GET /meals/test — тестовый эндпоинт для отладки
+    func test(req: Request) async throws -> [String: String] {
+        let user = try req.auth.require(User.self)
+        return [
+            "message": "AuthMiddleware работает!",
+            "user_id": try user.requireID().uuidString,
+            "user_email": user.email
+        ]
     }
 } 

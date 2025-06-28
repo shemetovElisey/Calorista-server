@@ -8,6 +8,7 @@ struct UserMigration: Migration {
             .field("email", .string, .required)
             .field("username", .string, .required)
             .field("password_hash", .string, .required)
+            .field("name", .string, .required)
             .field("created_at", .datetime, .required)
             .field("updated_at", .datetime, .required)
             .unique(on: "email")

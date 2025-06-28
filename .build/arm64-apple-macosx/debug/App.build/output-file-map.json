@@ -38,12 +38,6 @@
     "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/App.build/MealMigration~partial.swiftmodule",
     "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/App.build/MealMigration.swiftdeps"
   },
-  "/Users/elisey/Documents/Calorista/Sources/App/Migrations/MealUserMigration.swift": {
-    "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/App.build/MealUserMigration.d",
-    "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/App.build/MealUserMigration.swift.o",
-    "swiftmodule": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/App.build/MealUserMigration~partial.swiftmodule",
-    "swift-dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/App.build/MealUserMigration.swiftdeps"
-  },
   "/Users/elisey/Documents/Calorista/Sources/App/Migrations/ProductMigration.swift": {
     "dependencies": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/App.build/ProductMigration.d",
     "object": "/Users/elisey/Documents/Calorista/.build/arm64-apple-macosx/debug/App.build/ProductMigration.swift.o",

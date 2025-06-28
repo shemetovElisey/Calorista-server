@@ -2,6 +2,11 @@ import Vapor
 
 struct APIKeyMiddleware: Middleware {
     func respond(to request: Request, chainingTo next: Responder) -> EventLoopFuture<Response> {
+        // Исключаем маршрут документации из проверки API ключа
+        if request.url.path.hasPrefix("/docs") {
+            return next.respond(to: request)
+        }
+        
         // Получаем ожидаемый API ключ из переменной окружения или используем значение по умолчанию
         let expectedApiKey = Environment.get("API_KEY") ?? "default-secret-key-2024"
         

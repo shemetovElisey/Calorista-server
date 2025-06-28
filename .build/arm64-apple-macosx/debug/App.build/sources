@@ -4,7 +4,6 @@
 /Users/elisey/Documents/Calorista/Sources/App/Middleware/APIKeyMiddleware.swift
 /Users/elisey/Documents/Calorista/Sources/App/Middleware/AuthMiddleware.swift
 /Users/elisey/Documents/Calorista/Sources/App/Migrations/MealMigration.swift
-/Users/elisey/Documents/Calorista/Sources/App/Migrations/MealUserMigration.swift
 /Users/elisey/Documents/Calorista/Sources/App/Migrations/ProductMigration.swift
 /Users/elisey/Documents/Calorista/Sources/App/Migrations/UserMigration.swift
 /Users/elisey/Documents/Calorista/Sources/App/Models/JWTToken.swift
