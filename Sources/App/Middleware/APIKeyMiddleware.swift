@@ -2,8 +2,8 @@ import Vapor
 
 struct APIKeyMiddleware: Middleware {
     func respond(to request: Request, chainingTo next: Responder) -> EventLoopFuture<Response> {
-        // Исключаем маршрут документации из проверки API ключа
-        if request.url.path.hasPrefix("/docs") {
+        // Исключаем маршруты документации и health check из проверки API ключа
+        if request.url.path.hasPrefix("/docs") || request.url.path == "/health" {
             return next.respond(to: request)
         }
         

@@ -1,6 +1,11 @@
 import Vapor
 
 func routes(_ app: Application) throws {
+    // Health check endpoint для Docker
+    app.get("health") { req -> String in
+        return "OK"
+    }
+    
     // Маршрут для документации API
     app.get("docs") { req -> Response in
         let html = """

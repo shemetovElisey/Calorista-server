@@ -1,0 +1,9 @@
+.git
+.gitignore
+README.md
+.env
+*.sqlite
+*.sqlite3
+.DS_Store
+.build
+.swiftpm 
