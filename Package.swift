@@ -16,7 +16,9 @@ let package = Package(
         // 🔐 JWT for authentication
         .package(url: "https://github.com/vapor/jwt.git", from: "4.0.0"),
         // 🔒 Bcrypt for password hashing.
-        .package(url: "https://github.com/vapor/bcrypt.git", from: "1.0.0")
+        .package(url: "https://github.com/vapor/bcrypt.git", from: "1.0.0"),
+        // 🌐 Async HTTP Client for Linux/macOS HTTP requests
+        .package(url: "https://github.com/swift-server/async-http-client.git", from: "1.21.0")
     ],
     targets: [
         .executableTarget(
@@ -26,7 +28,8 @@ let package = Package(
                 .product(name: "Fluent", package: "fluent"),
                 .product(name: "FluentSQLiteDriver", package: "fluent-sqlite-driver"),
                 .product(name: "JWT", package: "jwt"),
-                .product(name: "BCrypt", package: "bcrypt")
+                .product(name: "BCrypt", package: "bcrypt"),
+                .product(name: "AsyncHTTPClient", package: "async-http-client")
             ],
             swiftSettings: [
                 // Enable better optimizations when building in Release configuration. Despite the use of

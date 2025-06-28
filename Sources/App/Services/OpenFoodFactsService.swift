@@ -1,5 +1,6 @@
 import Vapor
-import Foundation
+import AsyncHTTPClient
+import NIOCore
 
 // Сервис для работы с Open Food Facts API
 struct OpenFoodFactsService {
@@ -14,31 +15,23 @@ struct OpenFoodFactsService {
     
     // Получить продукт по штрих-коду
     mutating func getProduct(by barcode: String, on req: Request) async throws -> Product? {
-        // Проверяем rate limit для продуктов
         try await checkProductRateLimit()
-        
         let url = "\(baseURL)/product/\(barcode).json"
-        
         guard let requestURL = URL(string: url) else {
             throw Abort(.badRequest, reason: "Invalid URL")
         }
-        
-        let (data, response) = try await URLSession.shared.data(from: requestURL)
-        
-        guard let httpResponse = response as? HTTPURLResponse,
-              httpResponse.statusCode == 200 else {
+        let httpClient = HTTPClient(eventLoopGroupProvider: .shared(req.eventLoop))
+        defer { Task { try? await httpClient.shutdown() } }
+        let response = try await httpClient.get(url: requestURL.absoluteString).get()
+        guard response.status == .ok, var body = response.body else {
             return nil
         }
-        
-        // Парсим ответ Open Food Facts
+        let data = body.readData(length: body.readableBytes) ?? Data()
         let decoder = JSONDecoder()
         let offResponse = try decoder.decode(OpenFoodFactsResponse.self, from: data)
-        
         guard offResponse.status == 1, let product = offResponse.product else {
             return nil
         }
-        
-        // Создаем нашу модель продукта
         return Product(
             barcode: barcode,
             name: product.productName ?? product.genericName ?? "Unknown Product",
@@ -54,9 +47,7 @@ struct OpenFoodFactsService {
     
     // Поиск продуктов по названию
     mutating func searchProducts(query: String, on req: Request) async throws -> [Product] {
-        // Проверяем rate limit для поиска
         try await checkSearchRateLimit()
-        
         var components = URLComponents(string: searchURL)!
         components.queryItems = [
             URLQueryItem(name: "search_terms", value: query),
@@ -65,21 +56,18 @@ struct OpenFoodFactsService {
             URLQueryItem(name: "json", value: "1"),
             URLQueryItem(name: "page_size", value: "20")
         ]
-        
         guard let url = components.url else {
             throw Abort(.badRequest, reason: "Invalid URL")
         }
-        
-        let (data, response) = try await URLSession.shared.data(from: url)
-        
-        guard let httpResponse = response as? HTTPURLResponse,
-              httpResponse.statusCode == 200 else {
+        let httpClient = HTTPClient(eventLoopGroupProvider: .shared(req.eventLoop))
+        defer { Task { try? await httpClient.shutdown() } }
+        let response = try await httpClient.get(url: url.absoluteString).get()
+        guard response.status == .ok, var body = response.body else {
             return []
         }
-        
+        let data = body.readData(length: body.readableBytes) ?? Data()
         let decoder = JSONDecoder()
         let searchResponse = try decoder.decode(OpenFoodFactsSearchResponse.self, from: data)
-        
         return searchResponse.products.map { offProduct in
             Product(
                 barcode: offProduct.code ?? "",
